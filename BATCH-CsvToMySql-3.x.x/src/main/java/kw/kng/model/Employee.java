@@ -15,7 +15,7 @@ public class Employee
 }
 
 /*
-CREATE TABLE ntrjbatch.BATCH_EMPLOYEEINFO (
+CREATE TABLE ntrjbatch3xx.BATCH_EMPLOYEEINFO (
     EMPNO BIGINT,
     ENAME VARCHAR(200),
     EADD VARCHAR(200),
@@ -27,10 +27,10 @@ CREATE TABLE ntrjbatch.BATCH_EMPLOYEEINFO (
 
 
 /*
- SELECT COUNT(*) FROM ntrjbatch.batch_employeeinfo;
+ SELECT COUNT(*) FROM ntrjbatch3xx.batch_employeeinfo;
  
 select a.empno, COUNT(a.empno)
-from ntrjbatch.batch_employeeinfo a
+from ntrjbatch3xx.batch_employeeinfo a
 group by a.empno
 having count(a.empno)>1
 
