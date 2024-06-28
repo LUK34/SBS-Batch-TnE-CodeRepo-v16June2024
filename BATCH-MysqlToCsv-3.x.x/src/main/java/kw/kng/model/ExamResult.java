@@ -21,11 +21,8 @@ public class ExamResult
     private Float percentage;
 }
 
-
-
 /*
-
- create table ntrjbatch.EXAM_RESULT
+create table ntrjbatch3xx.EXAM_RESULT
 (
 	id bigint(20) NOT NULL auto_increment,
     dob timestamp not null default current_timestamp,
@@ -39,7 +36,7 @@ CREATE PROCEDURE generate_EXAM_RESULT()
 BEGIN
     DECLARE i INT DEFAULT 0;
     WHILE i < 500 DO
-        INSERT INTO ntrjbatch.EXAM_RESULT (dob, percentage, semester)
+        INSERT INTO ntrjbatch3xx.EXAM_RESULT (dob, percentage, semester)
         VALUES (
             FROM_UNIXTIME(UNIX_TIMESTAMP('2000-01-01 01:00:00') + FLOOR(RAND() * 31536000)),
             ROUND(RAND() * 100, 2),
@@ -49,19 +46,10 @@ BEGIN
     END WHILE;
 END$$
 DELIMITER ;
-
-call generate_EXAM_RESULT();
+	
+ call generate_EXAM_RESULT();
  
-select * from exam_result;
+ select * from ntrjbatch3xx.exam_result;
 
- */
-
-
-
-
-
-
-
-
-
+*/
 

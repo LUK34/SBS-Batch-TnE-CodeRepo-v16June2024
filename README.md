@@ -13,13 +13,25 @@ orai18n is applied for arabic language. So this file has to be inserted in build
 - Add this file in the buildpath for BATCH-2DS-ORA to work
 
 # 4. BATCH-CsvToMySql-2.x.x
-- This code will work for java 8, Version: 2.7.6
+- This code will work for java 1.8, Version: 2.7.6
 - This file will read the file from CSV file , process the buisness logic and write the data into MySql DB.
 - Dummy data present in csv file is generated from mockaroo website.
 - https://www.mockaroo.com/
 
 # 5. BATCH-CsvToMySql-3.x.x
-- This code will work for java 8, Version: 3.3.1
+- This code will work for java 17, Version: 3.3.1
 - This file will read the file from CSV file , process the buisness logic and write the data into MySql DB.
 - Dummy data present in csv file is generated from mockaroo website.
+- Disable `@EnableBatchProcessing` for 3.x.x 
 - https://www.mockaroo.com/
+
+# 6. BATCH-MysqlToCsv-2.x.x
+- This code will work for java 1.8, Version: 2.7.6
+- This file will read the data from MySql Database having percentage >90.0 .
+- The data will be read and be stored into csv file inside a folder called `filelocation`.
+
+# 7. BATCH-MysqlToCsv-3.x.x
+- This code will work for java 17, Version: 3.3.1
+- This file will read the data from MySql Database having percentage >90.0 .
+- The data will be read and be stored into csv file inside a folder called `filelocation`.
+- Disable `@EnableBatchProcessing` for 3.x.x 
